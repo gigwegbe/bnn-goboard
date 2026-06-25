@@ -323,6 +323,24 @@ iverilog -o bnn_sim bnn_classifier.v bnn_tb.v && vvp bnn_sim
 # expect: PASS: all 10 predictions match golden_reference.py
 ```
 
+Expected Output:
+
+```
+image 0 -> predicted 0   OK
+image 1 -> predicted 1   OK
+image 2 -> predicted 2   OK
+image 3 -> predicted 3   OK
+image 4 -> predicted 9   OK
+image 5 -> predicted 5   OK
+image 6 -> predicted 6   OK
+image 7 -> predicted 7   OK
+image 8 -> predicted 8   OK
+image 9 -> predicted 9   OK
+
+PASS: all 10 predictions match golden_reference.py
+bnn_tb.v:51: $finish called at 32620000 (1ps)
+```
+
 ### 5. Build and flash (after Stage 3 fills in goboard.pcf)
 
 ```bash
