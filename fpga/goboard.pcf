@@ -1,0 +1,16 @@
+# Nandland Go Board pin constraints (iCE40-HX1K, VQ100)
+set_io i_clk 15
+
+set_io o_led[0] 56
+set_io o_led[1] 57
+set_io o_led[2] 59
+set_io o_led[3] 60
+
+# 7-segment, RIGHT digit (active-low). o_seg = {a,b,c,d,e,f,g}
+set_io o_seg[6] 3     # A
+set_io o_seg[5] 4     # B
+set_io o_seg[4] 93    # C
+set_io o_seg[3] 91    # D
+set_io o_seg[2] 90    # E
+set_io o_seg[1] 1     # F
+set_io o_seg[0] 2     # G

@@ -1,0 +1,35 @@
+timestamp: "25030410310"
+arch: ICE40
+fpga_info {
+  fpga_id: "ice40hx1k-vq100"
+  part_num: "ICE40HX1K-VQ100"
+  size: "1k"
+  ice40_params {
+    type: "hx1k"
+    package: "vq100"
+  }
+}
+environment {
+  platform_id: "darwin-arm64"
+  is_windows: false
+  terminal_mode: FORCE_TERMINAL
+  theme_name: "light"
+  debug_level: 0
+  yosys_path: "/Users/george/.apio/packages/oss-cad-suite/share/yosys"
+  trellis_path: "/Users/george/.apio/packages/oss-cad-suite/share/trellis"
+  scons_shell_id: "zsh"
+  prjxray_db_path: "/Users/george/.apio/packages/openxc7/share/nextpnr/external/prjxray-db"
+  chipdb_path: "/Users/george/.apio/packages/openxc7/chipdb"
+  apio_home_path: "/Users/george/.apio"
+  env_build_path: "_build/default"
+}
+apio_env_params {
+  env_name: "default"
+  board_id: "go-board"
+  top_module: "top"
+}
+target {
+  upload {
+    programmer_cmd: "iceprog -d d:1/4 $SOURCE"
+  }
+}

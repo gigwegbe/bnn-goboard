@@ -1,0 +1,10 @@
+# Software model + data generation (Stages 1-2)
+numpy>=1.21
+
+# Optional: PyTorch training path (regenerate model/BNN.pkl)
+torch>=2.0
+torchvision>=0.15
+
+# FPGA toolchain is NOT pip-installable here - install separately:
+# pip install apio && apio install -a      (yosys + nextpnr + icestorm)
+#   apt install iverilog                      (for simulation)   # brew install icarus-verilog # For macbook
