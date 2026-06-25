@@ -355,7 +355,7 @@ apio upload     # flash the Go Board
       classification in Python (9/10, digit 4 → 9).
 - [x] **Stage 2 — Verilog datapath + simulation.** Synthesizable classifier,
       testbench passes against the golden reference, fits ~435/1280 LUTs.
-- [ ] **Stage 3 — Go Board bring-up.** Pin constraints, 7-segment polarity,
+- [x] **Stage 3 — Go Board bring-up.** Pin constraints, 7-segment polarity,
       `apio build` + `apio upload`, see a real digit light up.
 - [ ] **Optional — PyTorch training.** Replace the TensorFlow 1.x training so
       weights can be retrained/improved and re-exported to `BNN.pkl`.
